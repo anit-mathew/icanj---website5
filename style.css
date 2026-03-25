@@ -419,3 +419,23 @@ section[style*="background:#f4f4f4"] .ic-val { color:#1a1a1a !important; }
 
 /* Reduce excessive padding between sections */
 .section { padding:72px 0; }
+
+/* ── IMAGE FOLDER STRUCTURE ──
+   Place your images in an "images/" folder next to your HTML files:
+
+   images/
+   ├── pastor-finney-thomas.jpg     → Homepage + About pastor photo (400×400px)
+   ├── church-community.jpg         → About mission section (800×1000px)
+   ├── vbs-2026.jpg                 → Events featured banner (760×520px)
+   ├── ministry-children.jpg        → Children's Ministry card (600×360px)
+   ├── ministry-youth.jpg           → Youth Ministry card (600×360px)
+   ├── ministry-worship.jpg         → Worship Team card (600×360px)
+   ├── ministry-women.jpg           → Women's Ministry card (600×360px)
+   ├── ministry-men.jpg             → Men's Fellowship card (600×360px)
+   ├── ministry-outreach.jpg        → Outreach card (600×360px)
+   ├── series-romans.jpg            → Romans series thumbnail (600×320px)
+   ├── series-faith-over-fear.jpg   → Faith Over Fear thumbnail (600×320px)
+   └── series-prayer.jpg            → Power of Prayer thumbnail (600×320px)
+
+   All images fall back gracefully — placeholders show if image is missing.
+── */

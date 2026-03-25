@@ -6,8 +6,14 @@
 <link rel="stylesheet" href="style.css"/>
 <style>
 .series-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px;}
-.series-card{background:#ffffff;border-radius:12px;padding:28px;border:1px solid #e8e8e8;transition:all 0.2s;cursor:pointer;position:relative;}
+.series-card{background:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #e8e8e8;transition:all 0.2s;cursor:pointer;}
 .series-card:hover{border-color:var(--blue);transform:translateY(-2px);}
+.series-thumb{width:100%;height:160px;object-fit:cover;display:block;background:#e0f7f9;}
+.series-thumb-placeholder{width:100%;height:160px;background:linear-gradient(135deg,#e0f7f9,#b2ebf2);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#888;gap:4px;}
+.series-body-wrap{padding:20px;}
+.series-count{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);margin-bottom:8px;}
+.series-title{font-size:18px;font-weight:700;color:#1a1a1a !important;margin-bottom:8px;}
+.series-body{font-size:14px;color:#555 !important;line-height:1.7;}
 .series-count{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;}
 .series-title{font-size:20px;font-weight:700;color:var(--blue);margin-bottom:8px;}
 .series-body{font-size:14px;color:#555555;line-height:1.7;}
@@ -61,9 +67,9 @@
     <span class="eyebrow">Series</span>
     <h2 class="section-title">Current &amp; Recent Series</h2>
     <div class="series-grid">
-      <div class="series-card"><div class="series-count">12 Parts · Ongoing</div><div class="series-title">Walking Through Romans</div><p class="series-body">An in-depth verse-by-verse study of Paul's letter to the Romans — Wednesday Bible Study series.</p></div>
-      <div class="series-card"><div class="series-count">6 Parts · Completed</div><div class="series-title">Faith Over Fear</div><p class="series-body">What Scripture says about trusting God in times of uncertainty, loss, and suffering.</p></div>
-      <div class="series-card"><div class="series-count">8 Parts · Completed</div><div class="series-title">The Power of Prayer</div><p class="series-body">A study of what Jesus and the Apostles taught about prayer and communion with God.</p></div>
+      <div class="series-card"><img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&h=320&fit=crop&q=80" alt="Walking Through Romans" class="series-thumb" onerror="this.outerHTML='<div class=\'series-thumb-placeholder\'>📷<span>Series Thumbnail</span></div>'"/><div class="series-body-wrap"><div class="series-count">12 Parts · Ongoing</div><div class="series-title">Walking Through Romans</div><p class="series-body">An in-depth verse-by-verse study of Paul's letter to the Romans — Wednesday Bible Study series.</p></div></div>
+      <div class="series-card"><img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=600&h=320&fit=crop&q=80" alt="Faith Over Fear" class="series-thumb" onerror="this.outerHTML='<div class=\'series-thumb-placeholder\'>📷<span>Series Thumbnail</span></div>'"/><div class="series-body-wrap"><div class="series-count">6 Parts · Completed</div><div class="series-title">Faith Over Fear</div><p class="series-body">What Scripture says about trusting God in times of uncertainty, loss, and suffering.</p></div></div>
+      <div class="series-card"><img src="https://images.unsplash.com/photo-1476725376606-78bd56004997?w=600&h=320&fit=crop&q=80" alt="The Power of Prayer" class="series-thumb" onerror="this.outerHTML='<div class=\'series-thumb-placeholder\'>📷<span>Series Thumbnail</span></div>'"/><div class="series-body-wrap"><div class="series-count">8 Parts · Completed</div><div class="series-title">The Power of Prayer</div><p class="series-body">A study of what Jesus and the Apostles taught about prayer and communion with God.</p></div></div>
     </div>
   </div>
 </section>
