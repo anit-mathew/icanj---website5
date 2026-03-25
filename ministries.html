@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ministries – ICANJ</title>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.ministry-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:36px;}
+.min-card{background:#ffffff;border-radius:14px;padding:32px;border:1px solid #e8e8e8;display:flex;gap:20px;transition:border-color 0.2s;}
+.min-card:hover{border-color:var(--blue);}
+.min-num{font-size:11px;font-weight:800;letter-spacing:0.1em;color:var(--blue);width:28px;flex-shrink:0;padding-top:4px;}
+.min-title{font-size:19px;font-weight:700;color:var(--blue);margin-bottom:5px;}
+.min-when{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;}
+.min-body{font-size:14px;color:#555555;line-height:1.75;}
+.min-meta{font-size:12px;font-weight:600;color:#888888;margin-top:10px;}
+
+.vbs-banner{background:var(--dark);border-radius:16px;padding:48px;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center;margin-top:48px;border:1.5px solid var(--blue);}
+.vbs-tag{font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;}
+.vbs-title{font-size:clamp(26px,4vw,44px);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-0.02em;margin-bottom:12px;}
+.vbs-body{font-size:15px;color:rgba(255,255,255,0.45);line-height:1.7;}
+.vbs-actions{display:flex;flex-direction:column;gap:12px;flex-shrink:0;}
+
+@media(max-width:1024px){
+  .ministry-grid{grid-template-columns:1fr;}
+  .vbs-banner{grid-template-columns:1fr;padding:28px 20px;}
+}
+</style>
+</head>
+<body>
+<script src="header.js"></script>
+<div class="page-masthead"><div class="container"><span class="eyebrow">Serving Together</span><h1>Ministries</h1><p>There is a place for every person at ICANJ. Find yours.</p></div></div>
+
+<section class="section" style="background:#f4f4f4;">
+  <div class="container">
+    <span class="eyebrow">Active Ministries</span>
+    <h2 class="section-title">Where You Belong</h2>
+    <div class="ministry-grid">
+      <div class="min-card"><div class="min-num">01</div><div><div class="min-title">Children's Ministry</div><div class="min-when">Every Sunday</div><div class="min-body">A safe, faith-filled environment for children during the 10 AM service. Kids encounter Jesus through interactive lessons, worship, crafts, and Scripture memory.</div><div class="min-meta">Sunday · 10:00 AM · Main Campus</div></div></div>
+      <div class="min-card"><div class="min-num">02</div><div><div class="min-title">Youth Ministry</div><div class="min-when">Friday Evenings</div><div class="min-body">Teens grow in faith through dynamic teaching, transparent fellowship, and honest conversations about navigating life as a follower of Jesus.</div><div class="min-meta">Friday · 7:00 PM · Youth Room</div></div></div>
+      <div class="min-card"><div class="min-num">03</div><div><div class="min-title">Worship Team</div><div class="min-when">Saturday Rehearsals</div><div class="min-body">Musicians, vocalists, and technicians who lead our congregation into the presence of God each week. If you have gifts and a heart for worship, we'd love to hear from you.</div><div class="min-meta">Rehearsal: Saturday · Service: Sunday</div></div></div>
+      <div class="min-card"><div class="min-num">04</div><div><div class="min-title">Women's Ministry</div><div class="min-when">Monthly Gatherings</div><div class="min-body">A vibrant sisterhood encouraging one another through Bible study, prayer, and authentic fellowship. Monthly meetings create space to grow and support each other.</div><div class="min-meta">Monthly · Dates on Church Center</div></div></div>
+      <div class="min-card"><div class="min-num">05</div><div><div class="min-title">Men's Fellowship</div><div class="min-when">Monthly Breakfast</div><div class="min-body">Men gathering to sharpen one another in godliness, pray together, and hold each other accountable — over a table, in real conversation, with no pretence.</div><div class="min-meta">Monthly Breakfast · Dates on Church Center</div></div></div>
+      <div class="min-card"><div class="min-num">06</div><div><div class="min-title">Outreach &amp; Missions</div><div class="min-when">Year-Round</div><div class="min-body">Local community service and global mission support. If you have a heart for the lost and the hurting, join our outreach team.</div><div class="min-meta">Year-Round · Various Events</div></div></div>
+    </div>
+    <div class="vbs-banner">
+      <div>
+        <div class="vbs-tag">Featured Event 2026</div>
+        <div class="vbs-title">Vacation Bible School<br/>July 9–11, 2026</div>
+        <p class="vbs-body">Three days of faith, fun, and learning for children ages 4–12. VBS is one of ICANJ's most anticipated events each year.</p>
+      </div>
+      <div class="vbs-actions">
+        <a href="connect.html" class="btn btn-primary btn-arrow">Register Now</a>
+        <a href="events.html" class="btn btn-outline-light">Full Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="verse-band"><blockquote><p>"Each of you should use whatever gift you have received to serve others, as faithful stewards of God's grace in its various forms."</p><cite>1 Peter 4 : 10</cite></blockquote></div>
+
+<script src="footer.js"></script>
+</body>
+</html>
